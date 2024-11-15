@@ -5,4 +5,4 @@ class PostForm(forms.ModelForm):
     author = forms.ModelChoiceField(queryset=Author.objects.all(), required=True)
     class Meta:
         model = Post
-        fields = ['title', 'text', 'categories', 'author'] 
+        fields = ['title', 'text', 'categories', 'author', 'post_type'] 
